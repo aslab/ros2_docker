@@ -18,7 +18,7 @@
         "/home/mario/ros2/hands_on_ws/install/nav2_gazebo_spawner/lib/python3.8/site-packages",
         "/home/mario/ros2/hands_on_ws/install/nav2_common/lib/python3.8/site-packages",
         "/home/mario/ros2/hands_on_ws/build/mros2_reasoner",
-        "/home/mario/ros2/hands_on_ws/install/mros2_reasoner/lib/python3.8/site-packages",*/
+        "/home/ros2/hands_on_ws/install/mros2_reasoner/lib/python3.8/site-packages",*/
         "/opt/ros/foxy/lib/python3.8/site-packages"
     ]
 }

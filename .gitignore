@@ -1,6 +1,7 @@
 build/*
 install/*
 log/*
+src/*
 site/*
 .devcontainer/log/*
 .devcontainer/.devcontainer/*

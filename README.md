@@ -85,8 +85,9 @@ VSCode will build the dockerfile inside of `.devcontainer` for you.  If you open
 
 ### Update the template with your code
 
-1. Specify the repositories you want to include in your workspace in `src/ros2.repos` or delete `src/ros2.repos` and develop directly within the workspace.
-   1. If you are using a `ros2.repos` file, import the contents `Terminal->Run Task..->import from workspace file`
+1. Specify the repositories you want to include in your workspace in `src/ros2.repos` or delete `src/ros2.repos` and develop directly within the workspace. If you are using a `ros2.repos` file:
+   1. Create src folder `mkdir src`
+   2. Import the contents `Terminal->Run Task..->import from workspace file`
 2. Install dependencies `Terminal->Run Task..->install dependencies`
 3. Develop!
 
