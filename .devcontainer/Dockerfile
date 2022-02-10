@@ -24,6 +24,6 @@ ENV NVIDIA_DRIVER_CAPABILITIES \
 
 # Set up auto-source of workspace for ros user
 ARG WORKSPACE
-#RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/ros/.bashrc
+RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/ros/.bashrc
 # ENV GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${WORKSPACE}/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models:${WORKSPACE}/src/Pilot-URJC/pilot_urjc_bringup/worlds/models
 # ENV TURTLEBOT3_MODEL=waffle
