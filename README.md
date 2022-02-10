@@ -1,42 +1,8 @@
-# VSCode ROS2 Workspace Template
+# VSCode ROS2 Workspace for ASLab
 
-This template will get you set up using ROS2 with VSCode as your IDE.
+This ROS2 setup with VSCode is based on [this template](https://github.com/athackst/vscode_ros2_workspace). See its [README](https://github.com/athackst/vscode_ros2_workspace/blob/foxy/README.md) for a more in-depth look on how to use this workspace.
 
-See [how I develop with vscode and ros2](https://www.allisonthackston.com/articles/vscode_docker_ros2.html) for a more in-depth look on how to use this workspace.
-
-## Features
-
-### Style
-
-ROS2-approved formatters are included in the IDE.  
-
-* **c++** uncrustify; config from `ament_uncrustify`
-* **python** autopep8; vscode settings consistent with the [style guide](https://index.ros.org/doc/ros2/Contributing/Code-Style-Language-Versions/)
-
-### Tasks
-
-There are many pre-defined tasks, see [`.vscode/tasks.json`](.vscode/tasks.json) for a complete listing.  Feel free to adjust them to suit your needs.  
-
-Take a look at [how I develop using tasks](https://www.allisonthackston.com/articles/vscode_tasks.html) for an idea on how I use tasks in my development.
-
-### Debugging
-
-This template sets up debugging for python files and gdb for cpp programs.  See [`.vscode/launch.json`](.vscode/launch.json) for configuration details.
-
-### Continuous Integration
-
-The template also comes with basic continuous integration set up. See [`.github/workflows/ros.yaml`](/.github/workflows/ros.yaml).  
-
-To remove a linter just delete it's name from this line:
-
-```yaml
-      matrix:
-          linter: [cppcheck, cpplint, uncrustify, lint_cmake, xmllint, flake8, pep257]
-```
-
-## How to use this template
-
-### Prerequisites
+## Prerequisites
 
 You should already have Docker and VSCode with the remote containers plugin installed on your system.
 
@@ -44,29 +10,9 @@ You should already have Docker and VSCode with the remote containers plugin inst
 * [vscode](https://code.visualstudio.com/)
 * [vscode remote containers plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-### Get the template
+### Open this repository in VSCode
 
-Click on "use this template"
-
-![template_use](https://user-images.githubusercontent.com/6098197/91331899-43f23b80-e780-11ea-92c8-b4665ce126f1.png)
-
-### Create your repository
-
-On the next dialog, name the repository you would like to start and decide if you want all of the branches, or just the latest LTS: Foxy.
-
-![template_new](https://user-images.githubusercontent.com/6098197/91332035-713ee980-e780-11ea-81d3-13b170f568b0.png)
-
-Github will then create a new repository with the contents of this one in your account.  It grabs the latest changes as "initial commit".
-
-### Clone your repo
-
-Now you can clone your repo as normal
-
-![template_download](https://user-images.githubusercontent.com/6098197/91332342-e4e0f680-e780-11ea-9525-49b0afa0e4bb.png)
-
-### Open it in vscode
-
-Now that you've cloned your repo onto your computer, you can open it in VSCode (File->Open Folder). 
+Clone this repository in your computer and open it in VSCode (File->Open Folder). 
 
 When you open it for the first time, you should see a little popup that asks you if you would like to open it in a container.  Say yes!
 
@@ -97,3 +43,5 @@ Once the docker image is running and your code from 'src/ros2.repos' imported, c
    ```
    colcon build --symlink-install
    ```
+### Comments
+At the moment the `ros2.repos` loads [this](https://github.com/aslab/ign_simulation) repository. See its README for more information in how to use it. Omit the install parts and the source commands as the environment is already set up in the container.
