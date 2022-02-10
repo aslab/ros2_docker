@@ -2,3 +2,6 @@ build/*
 install/*
 log/*
 site/*
+.devcontainer/log/*
+.devcontainer/.devcontainer/*
+core

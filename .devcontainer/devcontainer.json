@@ -13,6 +13,7 @@
 		"--security-opt=seccomp:unconfined",
 		"--security-opt=apparmor:unconfined",
 		"--volume=/tmp/.X11-unix:/tmp/.X11-unix"
+		"--runtime=nvidia"  
 	],
 	"containerEnv": { "DISPLAY": "${localEnv:DISPLAY}" },
 	// Set *default* container specific settings.json values on container create.

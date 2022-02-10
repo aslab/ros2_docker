@@ -4,7 +4,8 @@
 # Example:
 ############
 repositories:
-  examples:
+   aslab/ign_simulation:
     type: git
-    url: https://github.com/ros2/examples.git
-    version: foxy
+    url: https://github.com/aslab/ign_simulation.git
+    version: main
+ 
