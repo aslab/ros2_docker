@@ -11,7 +11,7 @@ RUN apt-get update \
    && apt install ros-foxy-ros-ign -y\
    && apt-get autoremove -y \
    && apt-get clean -y \
-   && rm -rf /var/lib/apt/lists/* \
+   && rm -rf /var/lib/apt/lists/* 
 ENV DEBIAN_FRONTEND=dialog
 
 
