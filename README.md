@@ -6,9 +6,9 @@ This ROS2 setup with VSCode is based on [this template](https://github.com/athac
 
 You should already have Docker and VSCode with the remote containers plugin installed on your system.
 
-* [docker](https://docs.docker.com/engine/install/)
-* [vscode](https://code.visualstudio.com/)
-* [vscode remote containers plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+* [Docker](https://docs.docker.com/engine/install/)
+* [VSCode](https://code.visualstudio.com/)
+* [VSCode remote containers plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 * [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#pre-requisites)
 ```
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
@@ -40,7 +40,7 @@ VSCode will build the dockerfile inside of `.devcontainer` for you.  If you open
 ![template_container](https://user-images.githubusercontent.com/6098197/91332895-adbf1500-e781-11ea-8afc-7a22a5340d4a.png)
 
 
-### Update the template with your code
+## Update the template with your code
 
 1. Specify the repositories you want to include in your workspace in `ros2.repos` or delete `ros2.repos` and develop directly within the `/src` folder.
 2. Create src folder `mkdir src`
@@ -49,7 +49,7 @@ VSCode will build the dockerfile inside of `.devcontainer` for you.  If you open
 2. Install dependencies `Terminal->Run Task..->install dependencies`
 3. Develop!
 
-### Running your code
+## Running your code
 Once the docker image is running and your code from 'src/ros2.repos' imported, compile your workspace:
    ```
    colcon build --symlink-install
