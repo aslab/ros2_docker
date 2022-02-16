@@ -2,6 +2,7 @@
 
 This ROS2 setup with VSCode is based on [this template](https://github.com/athackst/vscode_ros2_workspace). See its [README](https://github.com/athackst/vscode_ros2_workspace/blob/foxy/README.md) for a more in-depth look on how to use this workspace.
 
+# If you are not using a computer with Nvidia graphic card, switch to branch foxy-no-nvidia
 ## Prerequisites
 
 You should already have Docker and VSCode with the remote containers plugin installed on your system.
