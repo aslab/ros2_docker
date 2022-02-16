@@ -2,7 +2,6 @@
 
 This ROS2 setup with VSCode is based on [this template](https://github.com/athackst/vscode_ros2_workspace). See its [README](https://github.com/athackst/vscode_ros2_workspace/blob/foxy/README.md) for a more in-depth look on how to use this workspace.
 
-# If you are not using a computer with Nvidia graphic card, switch to branch foxy-no-nvidia
 ## Prerequisites
 
 You should already have Docker and VSCode with the remote containers plugin installed on your system.
@@ -10,16 +9,6 @@ You should already have Docker and VSCode with the remote containers plugin inst
 * [Docker](https://docs.docker.com/engine/install/)
 * [VSCode](https://code.visualstudio.com/)
 * [VSCode remote containers plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-* [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#pre-requisites)
-```
-distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
-&& curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add - \
-&& curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
-
-sudo apt-get update
-
-sudo apt-get install -y nvidia-docker2
-```
 
 
 ### Open this repository in VSCode
