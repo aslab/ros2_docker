@@ -1,6 +1,0 @@
-repositories:
-   aslab/ign_simulation:
-    type: git
-    url: https://github.com/aslab/x1_simulation.git
-    version: main
- 
