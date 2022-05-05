@@ -43,17 +43,7 @@ VSCode will build the dockerfile inside of `.devcontainer` for you.  If you open
 
 ## Update the template with your code
 
-1. Specify the repositories you want to include in your workspace in `ros2.repos` or delete `ros2.repos` and develop directly within the `/src` folder.
-2. Create src folder `mkdir src`
-3. If you are using a `ros2.repos` file:
-   1. Import the contents `Terminal->Run Task..->import from workspace file`
-2. Install dependencies `Terminal->Run Task..->install dependencies`
-3. Develop!
-
-## Running your code
-Once the docker image is running and your code from 'src/ros2.repos' imported, compile your workspace:
-   ```
-   colcon build --symlink-install
-   ```
-### Comments
-At the moment the `ros2.repos` loads [this](https://github.com/aslab/ign_simulation) repository. See its README for more information in how to use it. Omit the install parts and the source commands as the environment is already set up in the container.
+1. Specify the repositories you want to include in your workspace: Use a file named "ros2.repos", make sure to put this file inside the src folder.
+2. If you are using a `ros2.repos` file: Import the contents `Terminal->Run Task..->import from workspace file`
+3. Install dependencies `Terminal->Run Task..->install dependencies`
+4. Develop!
